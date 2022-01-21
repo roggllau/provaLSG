@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PerfectNumbers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter number");
+        System.out.println("Entra el número");
         int a = input.nextInt();
         int[] divis = new int[500];
 
@@ -35,7 +35,7 @@ public class PerfectNumbers {
      * This method gives you the remainder of a division operation.
      * @param a base number that is divided TO in order to get true if divisible or false if not.
      * @param b divided number that gets divided to, it decreases till zero.
-     * @return
+     * @return retorna true si el mòdul de l'operació és zero.
      */
     private static boolean divisible(int a, int b) {
         return a % b == 0;
@@ -45,7 +45,7 @@ public class PerfectNumbers {
      * Fa el sumatori dels nombres divisibles guardats a l'array i si és igual al nombre inicial retorna true.
      * @param divis array
      * @param a nombre inicial
-     * @return
+     * @return retorna true si els números son perfectes.
      */
     private static boolean perf(int divis[], int a){
         int sumatori = 0;
